@@ -1,0 +1,7 @@
+requests>=2.28.0
+socket
+subprocess
+whois>=0.9
+nmap-python>=0.0.1
+dnspython>=2.3.0
+shodan>=1.28.0
