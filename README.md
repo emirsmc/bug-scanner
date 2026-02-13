@@ -43,8 +43,3 @@ node scanner.js --path ./src --output report.json --level high
 ## Contribution
 If you would like to contribute to the Vulnerability Scanner, please submit a pull request or open an issue for discussion.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any inquiries or support, please reach out to [your.email@example.com](mailto:your.email@example.com).
