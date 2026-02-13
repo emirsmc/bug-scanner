@@ -19,26 +19,8 @@ To install the Vulnerability Scanner, follow these steps:
    ```bash
    cd bug-scanner
    ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## Usage Instructions
-Once installed, you can run the scanner with the following command:
-```bash
-node scanner.js [options]
-```
-
-### Options
-- `--path <path>`: Specify the path to the directory or file you want to scan.
-- `--output <file>`: Set the output file for the scan report.
-- `--level <level>`: Define the severity level to filter results (e.g., low, medium, high).
-
-## Example Command
-```bash
-node scanner.js --path ./src --output report.json --level high
-```
+3. usage
+   python3 ip_vulnerability_scanner.py
 
 ## Contribution
 If you would like to contribute to the Vulnerability Scanner, please submit a pull request or open an issue for discussion.
