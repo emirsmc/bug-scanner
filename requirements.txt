@@ -1,7 +1,97 @@
-requests>=2.28.0
-socket
-subprocess
-whois>=0.9
-nmap-python>=0.0.1
-dnspython>=2.3.0
-shodan>=1.28.0
+# Enhanced Vulnerability Scanner - Requirements
+# Python 3.8+ required
+
+# Core dependencies
+aiohttp>=3.8.0          # Async HTTP client/server framework
+asyncio>=3.4.3          # Asynchronous I/O (built-in, but listed for clarity)
+
+# SSL/TLS handling (built-in, but listed for completeness)
+ssl>=1.16               # SSL/TLS support (built-in)
+
+# Data processing
+dataclasses>=0.6        # Data classes (built-in in Python 3.7+)
+
+# CLI and argument parsing
+argparse>=1.4.0         # Command line argument parsing (built-in)
+
+# Logging
+logging>=0.5.1.2        # Logging framework (built-in)
+
+# JSON handling
+json>=2.0.9             # JSON encoding/decoding (built-in)
+
+# HTML parsing and manipulation
+html>=1.5               # HTML escaping utilities (built-in)
+
+# URL parsing
+urllib3>=1.26.0         # URL parsing and manipulation
+urllib.parse>=3.11.0    # URL parsing (built-in)
+
+# Regular expressions
+re>=2.2.1               # Regular expression support (built-in)
+
+# System utilities
+sys>=3.9.0              # System-specific parameters (built-in)
+os>=1.0.1               # Operating system interfaces (built-in)
+socket>=1.0.0           # Socket networking (built-in)
+subprocess>=3.5.0       # Subprocess management (built-in)
+shutil>=1.8.0           # High-level file operations (built-in)
+time>=3.9.0             # Time access and conversions (built-in)
+datetime>=4.3           # Date and time classes (built-in)
+random>=3.9.0           # Random number generation (built-in)
+hashlib>=3.9.0          # Secure hashes and message digests (built-in)
+collections>=3.9.0      # Container datatypes (built-in)
+typing>=3.9.0           # Type hints support (built-in)
+
+# Optional dependencies for enhanced functionality
+# These are not required but will improve scanning capabilities if installed
+
+# For better SSL certificate handling
+certifi>=2024.0.0       # Mozilla's CA Bundle
+
+# For proxy support with authentication
+aiohttp-socks>=0.8.0    # SOCKS proxy connector for aiohttp
+
+# For DNS resolution and subdomain enumeration
+dnspython>=2.4.0        # DNS toolkit for Python
+
+# For colored terminal output (optional)
+colorama>=0.4.6         # Cross-platform colored terminal text
+
+# For progress bars during long scans (optional)
+tqdm>=4.65.0            # Progress bar for loops
+
+# For YAML configuration support (optional)
+pyyaml>=6.0.1           # YAML parser and emitter
+
+# External tools (must be installed separately via system package manager)
+# These are not Python packages but external binaries that enhance functionality
+#
+# nmap - Network exploration tool and security scanner
+#   Installation: sudo apt-get install nmap (Linux) or brew install nmap (macOS)
+#
+# nikto - Web server scanner
+#   Installation: sudo apt-get install nikto (Linux) or brew install nikto (macOS)
+#
+# sqlmap - Automatic SQL injection and database takeover tool
+#   Installation: sudo apt-get install sqlmap (Linux) or pip install sqlmap
+#
+# Optional but recommended for complete functionality
+
+# Installation instructions:
+# 1. Install Python dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Install external tools (optional but recommended):
+#    # On Debian/Ubuntu:
+#    sudo apt-get update
+#    sudo apt-get install nmap nikto sqlmap
+#
+#    # On macOS with Homebrew:
+#    brew install nmap nikto sqlmap
+#
+#    # On Windows (using Chocolatey):
+#    choco install nmap nikto sqlmap
+#
+# 3. Run the scanner:
+#    python enhanced_vulnerability_scanner.py --target example.com
